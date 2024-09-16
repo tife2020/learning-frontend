@@ -1,0 +1,58 @@
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+.searchBarCont {
+    background-color: white;
+    /* height: 40px; */
+    width: 500px;
+    position: absolute;
+    top: 050%;
+    left: 050%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    gap: 15px;
+  }
+  
+  input{
+      border: none;
+      width: 90%;
+  }
+  
+  .h1{
+      font-size: 30px;
+      font-weight: 800;
+  }
+  
+
+.container {
+  height: 100vh;
+  background-color: aqua;
+  position: relative;
+}
+
+.item {
+  height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 500ms ease-in-out;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: ;
+    
+}
+
+.item:hover{
+    transform: rotate(360deg);
+}
+

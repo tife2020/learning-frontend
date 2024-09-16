@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Flex</title>
+  </head>
+  <body>
+    <section>
+      <h1>Learning Flexbox</h1>
+      <p>
+        To start using the Flexbox, you need to have a container which will be
+        set as the flex container
+      </p>
+    </section>
+
+    <section>
+      <p for="cont"><strong>Normal Container</strong></p>
+      <div class="container" id="cont">
+        <div class="items" id="item1"></div>
+        <div class="items" id="item2"></div>
+        <div class="items" id="item3"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Flex Container</h2>
+      <p>
+        flex container becomes flexible when you set display: flex; Then the
+        following properties will take effect:
+      </p>
+      <ul>
+        <li><p>flex-direction</p></li>
+        <li><p>flex-wrap</p></li>
+        <li><p>flex-flow</p></li>
+        <li><p>justify-content</p></li>
+        <li><p>align-items</p></li>
+        <li><p>align-content</p></li>
+      </ul>
+
+      <div>
+        <p for="cont"><strong>flex Container</strong></p>
+        <div class="container flexCont" id="cont">
+          <div class="itemsFlex" id="item1">item1</div>
+          <div class="itemsFlex" id="item2">item2</div>
+          <div class="itemsFlex" id="item3">item3</div>
+        </div>
+
+        <p><strong>Notes</strong></p>
+        <ul>
+          <p>
+            <li><p>in a flex container, all items becomes inline-block</p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+          </p>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>flex-direction: row/-reverse or column/-reverse or ;</h2>
+      <p>The flex direction specifies the direction of the main axis of flex</p>
+
+      <div>
+        <p for="cont"><strong>flex direction row</strong></p>
+        <div class="container flexCont row" id="cont">
+          <div class="itemsFlex" id="item1">item1</div>
+          <div class="itemsFlex" id="item2">item2</div>
+          <div class="itemsFlex" id="item3">item3</div>
+        </div>
+        <p for="cont"><strong>flex direction row-reverse</strong></p>
+        <div class="container flexCont row-reverse" id="cont">
+          <div class="itemsFlex" id="item1">item1</div>
+          <div class="itemsFlex" id="item2">item2</div>
+          <div class="itemsFlex" id="item3">item3</div>
+        </div>
+
+        <p><strong>Notes</strong></p>
+        <ul>
+          <p>
+            <li><p>in a flex container, all items becomes inline-block</p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+          </p>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
