@@ -27,9 +27,9 @@
     <section>
       <p for="cont"><strong>Normal Container</strong></p>
       <div class="container" id="cont">
-        <div class="items" id="item1"></div>
-        <div class="items" id="item2"></div>
-        <div class="items" id="item3"></div>
+        <div class="items" id="item1">item1</div>
+        <div class="items" id="item2">item2</div>
+        <div class="items" id="item3">item3</div>
       </div>
     </section>
 
@@ -59,8 +59,8 @@
         <p><strong>Notes</strong></p>
         <ul>
           <p>
-            <li><p>in a flex container, all items becomes inline-block</p></li>
-            <li><p></p></li>
+            <li><p>In a flex container, all items becomes inline-block</p></li>
+            <li><p>If the items in the containwer have no height, the items are stretch to </p></li>
             <li><p></p></li>
           </p>
         </ul>
@@ -72,7 +72,11 @@
       <p>The flex direction specifies the direction of the main axis of flex</p>
 
       <div>
-        <p for="cont"><strong>flex direction row</strong></p>
+        <p for="cont"><strong>flex-direction: row</strong></p>
+        <p>
+          This is the default flex direction once display:flex is specified for
+          the container
+        </p>
         <div class="container flexCont row" id="cont">
           <div class="itemsFlex" id="item1">item1</div>
           <div class="itemsFlex" id="item2">item2</div>

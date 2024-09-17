@@ -1,0 +1,29 @@
+.container{
+    background-color: aqua;
+    padding: 10px;
+    color: white;
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    flex-wrap: wrap;
+    flex-direction:row;
+    /* flex-flow: wrap; */
+    justify-content: center;
+    align-items:center;
+
+
+}
+
+
+
+.items{
+    background-color: black;
+    padding: 10px;
+    height: 50px;
+    margin: 10px;
+    width: 200px;
+}
+
+/* #item2{
+    width: 50%;
+} */
