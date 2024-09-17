@@ -1,58 +1,79 @@
 body,
 html {
   font-family: "Poppins", sans-serif;
+  font-size: 12px;
 }
 
 .searchBarCont {
-    background-color: white;
-    /* height: 40px; */
-    width: 500px;
-    position: absolute;
-    top: 050%;
-    left: 050%;
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 12px 30px;
-    gap: 15px;
-  }
-  
-  input{
-      border: none;
-      width: 90%;
-  }
-  
-  .h1{
-      font-size: 30px;
-      font-weight: 800;
-  }
-  
+  background-color: white;
+  /* height: 40px; */
+  width: 500px;
+  position: absolute;
+  top: 050%;
+  left: 050%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 12px 30px;
+  gap: 15px;
+}
+
+input {
+  border: none;
+  width: 90%;
+}
 
 .container {
   height: 100vh;
   background-color: aqua;
   position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#notes{
+    height: auto;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#heading{
+    font-size: 15px;
 }
 
 .item {
   height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 500ms ease-in-out;
+
+}
+
+.item:hover {
+  transform: rotate(360deg);
+}
+
+.object{
+    height: 50px;
     width: 50px;
-    border-radius: 50%;
     background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: all 500ms ease-in-out;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: ;
-    
+    margin-block: 20px;
 }
-
-.item:hover{
-    transform: rotate(360deg);
+#scale:hover{
+    transform: scale(1.5);
 }
-
+#translate:hover{
+    transform: translate(20px, 20px);
+}
+#skew:hover{
+    transform: skew(10deg, 10deg);
+}

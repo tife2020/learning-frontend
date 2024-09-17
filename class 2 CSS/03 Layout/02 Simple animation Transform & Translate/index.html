@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script
-    src="https://kit.fontawesome.com/b5d68417cd.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/b5d68417cd.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Simple animation with Transform & Transition</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <div class="container">
-
-        <div class="searchBarCont">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search Google or type a URL">
-            <i class="fa-solid fa-microphone"></i>
-            <i class="fa-solid fa-camera"></i>
-        </div>
+      <div class="searchBarCont">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search Google or type a URL" />
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-camera"></i>
+      </div>
     </div>
 
     <section>
+      <div class="container" id="notes">
         <h1>Simple animation Transform & Transition</h1>
-        <h2>Transform</h2>
-        <p>it is a css property used to change the form of an object </p>
 
-        <div class="container">
+        <p id="heading"><strong>Transform</strong></p>
+        <p>
+          It is a css property used to change the form of an object. it has the
+          nice the following values
+        </p>
+        <ul>
+          <li><p>scale</p></li>
+          <ul>
+            <li>
+              This scale things to be bigger or smaller. scale the left and
+              right with <strong>transform: scaleX()</strong>, top and bottom
+              with <strong>transform: scaleY()</strong> or all four at once
+              <strong>transform: scale(X,Y) or scale(XY) </strong>
+            </li>
+            <div class="object" id="scale"></div>
+          </ul>
+          <li><p>translate</p></li>
+          <ul>
+            <div id="scale"></div>
+            <li>
+              This move things things up with e.g
+              <strong>transform: translateY(-100px)</strong>, right with
+              <strong>transform: translateX(100px)</strong>, bottom with
+              <strong>transform: translateY(100px)</strong>, left with
+              <strong>transform: translateX(-100px)</strong>, or diagonally
+              with<strong>transform: translate(X,Y)</strong>
+            </li>
+            <div class="object" id="translate"></div>
+          </ul>
+          <li><p>rotate</p></li>
+          <ul>
+            <li>
+              This rotates the item in the degree specified with
+              <strong>transform: rotate(90deg)</strong>
+            </li>
             <div class="item transform">+</div>
-        </div>
+          </ul>
+          <li><p>skew</p></li>
+          <ul>
+            <li>tilt the object in the X-axis 0r Y-axis with <strong>transform: skew(X,Y)</strong></li>
+            <div class="object" id="skew"></div>
+          </ul>
+        </ul>
+      </div>
     </section>
-</body>
+  </body>
 </html>
