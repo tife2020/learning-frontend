@@ -47,6 +47,7 @@ nav{
     display: inline-block;
     margin-inline: 10px;
     position: relative;
+    overflow: hidden;
 }
 
 .navContent .logo{
@@ -67,17 +68,20 @@ nav{
     color: black;
     font-weight: var(--paraHetLinkFontWeight);
     font-size: var(--paraHetLinkFontSize);
-
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: color linear 200ms;
 }
 
 .hr{
     position: absolute;
     z-index: 1;
-    bottom: -5px;
+    bottom: 0;
     width: 100%;
     height: 1px;
     background-color: var(--btnRedColor);
-    display: none;
+    transform: translateX(-100%);
+    transition: transform linear 200ms;
 }
 
 .navContent li .active{
@@ -89,18 +93,8 @@ nav{
 }
 
 .navContent li a:hover ~ .hr{
-    display: block;
-    animation: borderEffect 300ms ease-in-out;
+    transform: translateX(0%);
 
-}
-
-@keyframes borderEffect{
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
 }
 
 
