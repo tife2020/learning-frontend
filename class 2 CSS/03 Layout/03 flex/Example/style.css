@@ -16,13 +16,25 @@
     --paraFont: "Nunito", sans-serif;
     --paraHetLinkFontWeight: 700;
     --paraHetLinkFontSize: 17px;
-    --grayBgColor: #F8F8F8
+    --grayBgColor: #F8F8F8;
+    --h1FontSize: 46px
+
 
 }
 
 body{
     font-family:var(--paraFont);
-    background-color: rgb(183, 183, 183);
+}
+
+h1,h2,h3{
+    font-family: var(--logoHeadingFont);
+}
+
+h1{
+    font-size: var(--h1FontSize);
+    font-weight: var(--logoFontWeight);
+    line-height: 56px;
+
 }
 
 .container{
@@ -33,6 +45,10 @@ body{
 nav{
     background-color: white;
     height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .navContent{
@@ -128,7 +144,7 @@ nav{
     color: white;
 }
 
-.searchctaCont .ctaBtn{
+.searchctaCont .ctaBtn, button{
     border: none;
     font-size: var(--paraHetLinkFontSize);
     font-weight: var(--paraHetLinkFontWeight);
@@ -150,12 +166,78 @@ nav{
     display: none;
 }
 
-
-
 .searchctaCont  .fa-moon{
     font-size: 20px;
 }
 
+/* Header style beginning */
+
+header{
+    background: rgba(0, 0, 0, 0.688) url(https://wp.w3layouts.com/photoflash/wp-content/themes/Photoflash/assets/images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 70vh;
+    padding-block: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.fa-camera{
+    font-size:clamp(
+        35px,5vw,var(--h1FontSize)
+    );
+    padding-bottom: 20px;
+}
+
+.headerContent{
+    max-width: 650px;
+}
+
+.headerText{
+    margin-bottom: 40px;
+    line-height: 1.2;
+    font-size: clamp(
+        28px,5vw,var(--h1FontSize)
+    );
+}
+
+.searchCont{
+    display: flex;
+}
+
+.headerSearchBox{
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.headerSearchBox::placeholder{
+    font-size: 20px;
+}
+
+.headerSearchBox + button{
+   width: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* Header style ending  */
+
+
+/* Section 1 style beginning  */
+.section1{
+    height: 100vh;
+}
+/* Section 1 style ending  */
 
 
 
@@ -204,6 +286,14 @@ nav{
 
     .navContent .searchCont,.ctaBtn{
         display: none;
+    }
+
+    header{
+        height: 90vh;
+    }
+
+    .headerContent{
+        padding-inline: 3%;
     }
 
 
