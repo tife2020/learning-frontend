@@ -511,15 +511,15 @@ input[name='testdots']{
 
 
 #dot2:checked ~ .sliderCont .testimoniesCont {
-  transform: translateX(-25%); /* Move to the second and center */
+  transform: translateX(-100%); /* Move to the second and center */
 }
 
 #dot3:checked ~ .sliderCont .testimoniesCont {
-  transform: translateX(-50%); /* Move to the second and center */
+  transform: translateX(-200%); /* Move to the second and center */
 }
 
 #dot4:checked ~ .sliderCont .testimoniesCont {
-  transform: translateX(-75%); /* Move to the second and center */
+  transform: translateX(-300%); /* Move to the second and center */
 }
 
 
