@@ -525,6 +525,20 @@ input[name='testdots']{
 
 /* Section 2 Testimonials style ending  */
 
+
+/* Section 3 images style starting  */
+.imageCont{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: 300px;
+}
+
+/* Section 3 images style ending  */
+
+
+
+
+
 @media (max-width: 1300px) {
   .container {
     padding-inline: 3%;
